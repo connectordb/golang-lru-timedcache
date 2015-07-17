@@ -1,7 +1,7 @@
 # golang-lru-timedcache
 Simple wrapper for golang-lru which allows time based expiration of keys.
 
-The cache is indexed by both an id and an index parameter.
+The cache is indexed by both an key and an id.
 
 ```go
 
