@@ -92,9 +92,6 @@ func (tc *TimedCache) GetNameID(keyName string) (nameID int64, ok bool) {
 
 //UnlinkNamePrefix removes all names with the given prefix. This is not a very efficient way to do it,
 //since it loops through the entire cache unlinking names.  It locks queries by name for the entire time.
-//it might be a better idea to just let names expire, since if a user is deleted, any database operation on the user
-//will fail miserably. Writing to a stream belonging to a deleted user is still possible that way, but
-//Redis has a cleaning process that runs periodically.
 func (tc *TimedCache) UnlinkNamePrefix(namePrefix string) {
 	tc.Lock()
 	for key := range tc.nameMap {
