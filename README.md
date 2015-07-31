@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/connectordb/golang-lru-timedcache.svg)](https://travis-ci.org/connectordb/golang-lru-timedcache)[![Coverage Status](https://coveralls.io/repos/connectordb/golang-lru-timedcache/badge.svg?branch=master&service=github)](https://coveralls.io/github/connectordb/golang-lru-timedcache?branch=master)[![GoDoc](https://godoc.org/github.com/connectordb/golang-lru-timedcache?status.svg)](http://godoc.org/github.com/connectordb/golang-lru-timedcache)
+
 # golang-lru-timedcache
 Simple wrapper for golang-lru which allows time based expiration of keys.
 
